@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import CompA, { CompB } from './components/DoisComponentes'
+import Familia from './components/Familia';
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <div>
-        <CompA valor="Olá, eu sou o componente A" />
-        <CompB valor="Olá, eu sou o componente B" />
+        <Familia familia="Silva"/>
     </div>
     ,elemento)
