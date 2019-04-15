@@ -6,13 +6,8 @@ const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <div>
-        <Familia>
-            <Membro nome="Kelvi" sobrenome="Ribeiro" />
-            <Membro nome="Thais" sobrenome="Ribeiro" />
-        </Familia>
-        <Familia>
-            <Membro nome="Ned" sobrenome="Stark" />
-            <Membro nome="Sansa" sobrenome="Stark" />
-        </Familia>
+        <Familia sobrenome="Ribeiro">
+            <Membro nome="Kelvi"  />            
+        </Familia>        
     </div>
     , elemento)
