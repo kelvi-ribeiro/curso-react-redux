@@ -1,6 +1,12 @@
 import React from 'react'
 
-
-export default () => <h1>Primeiro Componente Arrow()!</h1>
+const isLegal = true
+export default (props) =>
+    <div>
+        <h1>{props.valor}</h1>
+        <h1>{1 + 1}</h1>
+        <h1>Legal ? {isLegal ? 'Sim': 'Não'}</h1>
+        <h1>{Math.ceil(Math.random())}</h1>
+    </div>
 
 
