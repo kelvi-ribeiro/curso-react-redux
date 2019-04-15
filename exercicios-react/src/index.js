@@ -7,7 +7,9 @@ const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
         <Familia sobrenome="Ribeiro">
-            <Membro nome="Kelvi"  />            
+            <Membro nome="Kelvi"/>
+            <Membro nome="Thaís"/>
+            
         </Familia>        
     </div>
     , elemento)
