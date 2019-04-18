@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ComponenteComFuncao from './components/ComponenteComFuncao';
+import Pai from './components/Pai'
+
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
-    <div>
-        <ComponenteComFuncao />
+    <div>        
+        <Pai />
     </div>
     , elemento)
