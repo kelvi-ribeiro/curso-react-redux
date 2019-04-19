@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ComponenteClasse from './components/ComponenteClasse';
+import Contador from './components/Contador';
 
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <div>        
-        <ComponenteClasse valor="Oie para todos"/>
+        <Contador numero={0}/>
     </div>
     , elemento)
