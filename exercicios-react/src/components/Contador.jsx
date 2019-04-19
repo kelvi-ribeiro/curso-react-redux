@@ -1,15 +1,28 @@
 import React,{Component} from 'react'
 export default class Contador extends Component {
+    state = {
+        numero:this.props.numeroInicial
+    }
     
     maisUm = () => {
-        this.props.numero++
+        this.setState({numero:++this.state.numero})
     }
+    menosUm = () => {
+        this.setState({numero:--this.state.numero})
+    }
+
+    alterarValor = diferenca => {
+        this.setState({numero:this.state.numero + diferenca})
+    }
+
     render(){
         return (
             <div>
-            Número: {this.props.numero}
-            <button onClick={() => this.maisUm()}>Inc</button>
-            <button>Dec</button>
+            Número: {this.state.numero}
+            <button onClick={this.maisUm}>Inc</button>
+            <button onClick={this.menosUm}>Dec</button>
+            <button onClick={() => this.alterarValor(100)}>Inc100</button>
+            <button onClick={() => this.alterarValor(-100)}>Dec100</button>
         </div>
         )
     }
@@ -17,8 +30,8 @@ export default class Contador extends Component {
 }
 
 /* Primeira Solução: Garantindo o bind no construtor
-constructor(props){
-    super(props)
+constructor(state){
+    super(state)
     this.maisUm = this.maisUm.bind(this)
 } */
 
@@ -27,5 +40,5 @@ constructor(props){
  */
 /* Terceira Solução: Declarando a função como arrow function
 maisUm = () => {
-    this.props.numero++
+    this.state.numero++
 } */
