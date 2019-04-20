@@ -11,6 +11,7 @@
 | Conceito | O que é ?
 |---|--|
 | `JSX`| Na prática, é escrever código em HTML dentro de um arquivo JavaScript e para esse código ser interpretado pelo Browser, é feito uma conversão desse mesmo código parecido com HTML para funções nativas de JavaScript |
+| Sobre passar valor boleano para algum componente| Nesse caso, podemos ter uma sintaxe mais enxuta passando apenas o nome do atributo que o componente esperar num exemplo o que poderia ser assim: `<Componente par={true}/>` fica apenas assim `<Componente par />`. Existe um exemplo disso no Projeto Calculadora no componente [Calculator](https://github.com/kelvi-ribeiro/curso-react-redux/blob/master/projects/calculadora-react/src/main/Calculator.jsx)|
 | state|  Uma um atributo default de um componente React que funciona de forma evolutiva, ou seja, quando algum valor é atribuido a algum state, ele não é atribuído ao pé da letra, o valor do state é evoluído, sendo assim, é possível ter um rastro de todas evoluções daquele state.|
 |Contornando o Problema de Elementos de mesmo nível devem ter um pai em comum de dois jeitos diferente, os dois jeitos foram seperados por uma virgula|`<React.Fragment>  <h1>Parte 1</h1>   <h1>Parte 2</h1> </React.Fragment>`,`[<h1>Parte 1</h1>,<h1>Parte 2</h1>]`|
 | Forma de como trabalhar com componentes filhos| É só ver o exemplo no Componente [Família.jsx](https://github.com/kelvi-ribeiro/curso-react-redux/blob/master/exercicios-react/src/components/Familia.jsx)
