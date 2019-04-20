@@ -3,6 +3,8 @@
 | Comando | O que faz ?
 |---|--|
 | `npm i -g create-react-app`| Comando para instalar globalmente a ferramenta que ajuda na configuração de um projeto react,a versão 2.1.8 fora usado nesse projeto |
+| `create-react-app {nameApp}`| Comando da ferramenta instalada logo acima para criar um projeto com todas as configurações já prontas para o desenvolvimento(Webpack e etc...) |
+
 
 ## Definições
 
