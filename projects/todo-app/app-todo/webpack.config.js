@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
@@ -12,10 +11,7 @@ module.exports = {
         contentBase: './public',
     },
     resolve: {
-        extensions: ['', '.js', '.jsx'],
-        alias: {
-            modules: __dirname + '/node_modules'
-        }
+        extensions: ['', '.js', '.jsx']        
     },
     plugins: [ 
         new ExtractTextPlugin('app.css')
