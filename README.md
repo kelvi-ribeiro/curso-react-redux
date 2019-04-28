@@ -23,8 +23,15 @@
 | Conceito | O que é ?
 | - | - |
 | mapStateToProps | No Mundo do React com Redux, essa é a nomenclatura que é comunmente usada para mapear as props da Store do Redux com as propriedades de algum componente|
-| - | - |
 | mapDispatchToProps | No Mundo do React com Redux, essa é a nomenclatura que é comunmente usada para mapear as Action Creators(funções) que alteram os objetos da store
+
+
+## JavaScript
+
+| Conceito | O que é ?
+| - | - |
+| `+variavel` ou `-variavel` | o código a seguir transforma a variável passada em um número, uma forma mais simples que converter uma string para um número, passando apenas o operador antes da variável|
+
 
 ## Sobre o React Hook React  16.8
 Com esse novo recurso, é possível escrever componente baseados em funções com recursos disponíveis apenas em componentes baseado em classe, como ciclo de vida e state. Existe um exemplo desse recurso no componente [Hook](https://github.com/kelvi-ribeiro/curso-react-redux/blob/master/exercicios-react/src/components/Hook.jsx)
