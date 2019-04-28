@@ -1,5 +1,4 @@
-export function changeValue(e){
-    console.log(e.target.value)
+export function changeValue(e){    
     return {
         type:'VALUE_CHANGED',
         payload:e.target.value
