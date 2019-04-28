@@ -1,11 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Hook from './components/Hook';
+import { combineReducers, createStore } from 'redux'
+import { Provider } from 'react-redux'
+import Field from './components/Field';
 
 const elemento = document.getElementById('root')
 
+const reducers = combineReducers({
+    field: () => ({ value: 'opa' })
+})
+
 ReactDOM.render(
-    <div>        
-        <Hook numeroInicial={200}/>
-    </div>
+    <Provider store={createStore(reducers)}>
+        <Field initialValue="Hey" />
+    </Provider>
+
     , elemento)
