@@ -12,7 +12,7 @@ const reducers = combineReducers({
 
 ReactDOM.render(
     <Provider store={createStore(reducers)}>
-        <Field initialValue="Hey" />
+        <Field  />
     </Provider>
 
     , elemento)
