@@ -18,5 +18,13 @@
 | Sobre Arrow Function e `this`| O recurso de Arrow Function garante que o `this` será associado ao local que a função foi escrita, diferente de uma função comum que o `this` pegaria o contexto da onde a função foi chamada|
 | Operador de desestruturação (destructuring assignmen)| Esse recurso nos permite fazer várias coisas de forma enchuta, um exemplo disso seria com a atribuição mais inteligente de variáveis de um array, desse jeito : `[a,b,c] = [1,2,3]` o código a seguir, faz com que as variáveis receam os valores sequenciamente, sendo `a` variável ver sendo 1, a variábel `b` sendo 3 e a variável `c` sendo 3|
 
+## Redux
+
+| Conceito | O que é ?
+| - | - |
+| mapStateToProps | No Mundo do React com Redux, essa é a nomenclatura que é comunmente usada para mapear as props da Store do Redux com as propriedades de algum componente|
+| - | - |
+| mapDispatchToProps | No Mundo do React com Redux, essa é a nomenclatura que é comunmente usada para mapear as Action Creators(funções) que alteram os objetos da store
+
 ## Sobre o React Hook React  16.8
 Com esse novo recurso, é possível escrever componente baseados em funções com recursos disponíveis apenas em componentes baseado em classe, como ciclo de vida e state. Existe um exemplo desse recurso no componente [Hook](https://github.com/kelvi-ribeiro/curso-react-redux/blob/master/exercicios-react/src/components/Hook.jsx)
