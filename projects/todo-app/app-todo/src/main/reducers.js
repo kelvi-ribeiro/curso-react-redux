@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-    todo:() => ({        
+    todo:() => ({  
+        description:'Ler livro',
         list:[
             {
                 _id:1,
