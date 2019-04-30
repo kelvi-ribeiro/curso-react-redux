@@ -1,8 +1,7 @@
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-    todo:() => ({
-        description:'Ler livro',
+    todo:() => ({        
         list:[
             {
                 _id:1,
@@ -19,7 +18,7 @@ const rootReducer = combineReducers({
                 description:'Consulta médica na terça depois do almoço',
                 done:false
             },
-    ]
+        ]
     })
 })
 
