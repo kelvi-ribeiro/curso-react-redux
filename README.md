@@ -24,7 +24,9 @@
 | - | - |
 | mapStateToProps | No Mundo do React com Redux, essa é a nomenclatura que é comunmente usada para mapear as props da Store do Redux com as propriedades de algum componente|
 | mapDispatchToProps | No Mundo do React com Redux, essa é a nomenclatura que é comunmente usada para mapear as Action Creators(funções) que alteram os objetos da store
-| Uso de redux-promise | Com esse package, é possível configurar de uma forma mais enxuta, as actions que possuem métodos assíncronos(requisição http por exemplo). Só para ficar claro, não é só com esse package que torna isso possível, mas também a combinação dele com o método applyMiddleware do redux. Existe um exemplo do uso dessa combinação no projeto [todo](https://github.com/kelvi-ribeiro/curso-react-redux/tree/master/projects/todo-app), no arquivo [index.jsx](https://github.com/kelvi-ribeiro/curso-react-redux/blob/master/projects/todo-app/app-todo/src/index.jsx)
+| Uso de redux-promise | Com esse package, é possível configurar de uma forma mais enxuta, as actions que possuem métodos assíncronos(requisição http por exemplo). Só para ficar claro, não é só com esse package que torna isso possível, mas também a combinação dele com o método applyMiddleware do redux. Existe um exemplo do uso dessa combinação no projeto [todo](https://github.com/kelvi-ribeiro/curso-react-redux/tree/master/projects/todo-app), no arquivo [index.jsx](https://github.com/kelvi-ribeiro/curso-react-redux/blob/master/projects/todo-app/app-todo/src/index.jsx)|
+| Uso de redux-multi | Com esse package, após configurado, é possível executar funções ou qualquer outra operação dentro dos reducers. Existe um exemplo disso no projeto [todo](https://github.com/kelvi-ribeiro/curso-react-redux/tree/master/projects/todo-app). A configuração fica no arquivo [index.jsx](https://github.com/kelvi-ribeiro/curso-react-redux/blob/master/projects/todo-app/app-todo/src/index.jsx) e o uso dessa funcionalidade fica no arquivo [todoActions.js](https://github.com/kelvi-ribeiro/curso-react-redux/blob/master/projects/todo-app/app-todo/src/todo/todoActions.js)|
+
 
 ## JavaScript
 
