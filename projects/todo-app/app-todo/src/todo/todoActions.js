@@ -19,9 +19,27 @@ export const search = () => {
 export const add = (description) => {
     return dispatch => {
         axios.post(URL,{ description })
-        .then(resp => dispatch({type:'TODO_ADDED'}))
-        .then(res => dispatch(search()))        
+        .then(() => dispatch({type:'TODO_ADDED'}))
+        .then(() => dispatch(search()))        
     }
 }
+
+export const markAsDone = (todo) => {
+    return dispatch => {
+        axios.put(`${URL}/${todo._id}`,{...todo, done:true})
+        .then(() => dispatch({type:'TODO_MARKED_AS_DONE'}))
+        .then(() => dispatch(search()))
+    }
+}
+
+export const markAsPending = (todo) => {
+    return dispatch => {
+        axios.put(`${URL}/${todo._id}`,{...todo, done:false})
+        .then(() => dispatch({type:'TODO_MARKED_AS_PENDING'}))
+        .then(() => dispatch(search()))
+    }
+}
+
+
 
 
