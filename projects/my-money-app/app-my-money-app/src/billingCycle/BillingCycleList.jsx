@@ -9,14 +9,14 @@ class BillingCycleList extends Component {
     }
 
     renderRows(){
-        const list = this.props.list
-        return list.map(billingCycle => {
+        const list = this.props.list        
+        return list.map(billingCycle => 
             <tr key={billingCycle._id}>
                 <td>{billingCycle.name}</td>
                 <td>{billingCycle.month}</td>
                 <td>{billingCycle.year}</td>
             </tr>
-        })
+        )
     }
 
     render() {
