@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { connect } from "react-redux";
-import Show from '../operador/Show';
+import { connect } from "react-redux"
+import Show from '../operador/Show'
 class TabContent extends Component {
     render() {
         const selected = this.props.tab.selected === this.props.id

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import ContentHeader from '../common/template/ContentHeader';
-import Content from '../common/template/Content';
-import ValueBox from '../common/widget/ValueBox';
-import Row from '../common/layout/Row';
-import axios from 'axios';
+import ContentHeader from '../common/template/ContentHeader'
+import Content from '../common/template/Content'
+import ValueBox from '../common/widget/ValueBox'
+import Row from '../common/layout/Row'
+import axios from 'axios'
 
 const BASE_URL = 'http://localhost:3000/api'
 

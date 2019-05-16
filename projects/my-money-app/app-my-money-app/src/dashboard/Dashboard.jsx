@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
+import { connect } from "react-redux"
+import { bindActionCreators } from "redux"
 import { getSummary } from './dashboardActions'
-import ContentHeader from '../common/template/ContentHeader';
-import Content from '../common/template/Content';
-import ValueBox from '../common/widget/ValueBox';
-import Row from '../common/layout/Row';
+import ContentHeader from '../common/template/ContentHeader'
+import Content from '../common/template/Content'
+import ValueBox from '../common/widget/ValueBox'
+import Row from '../common/layout/Row'
 
 
 class Dashboard extends Component {
