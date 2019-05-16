@@ -14,7 +14,7 @@ export function getList(){
 }
 
 export function create(values) {
-    return dispatch => {
+    return function teste(dispatch) {
         axios.post(`${BASE_URL}/billingCycles`, values)
         .then(() => {
             toastr.success('Sucesso','Operação Realizada com sucesso')
