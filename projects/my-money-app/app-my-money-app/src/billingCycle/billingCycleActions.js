@@ -31,7 +31,13 @@ export function create(values) {
                 toastr.error('Erro',error)
             })
         })        
-    }
+    }   
     
-    
+}
+
+export function showUpdate(billingCycle){
+    return [
+        showTabs('tabUpdate'),
+        selectTab('tabUpdate')
+    ]
 }
