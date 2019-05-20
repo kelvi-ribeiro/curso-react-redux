@@ -8,9 +8,18 @@ import LabelAndInput from '../common/form/LabelAndInput'
 import ItemList from './ItemList';
 import Summary from './Summary';
 class BillingCycleForm extends Component {
+
+    calculateSummary(){
+        const sum = (total, valorAtual) => total + valorAtual
+        return {
+            sumOfCredts:this.props.credits.map(credit => +credit.value || 0).reduce(sum),
+            sumOfDebts:this.props.debts.map(debt => +debt.value || 0).reduce(sum)
+        }
+    }
     
     render() {
-        const {handleSubmit, readOnly, credits} = this.props
+        const {handleSubmit, readOnly, credits, debts} = this.props
+        const {sumOfCredts, sumOfDebts} = this.calculateSummary()
         return (
             <form role="form" onSubmit={handleSubmit}> 
                 <div className="bodx-body">
@@ -22,10 +31,10 @@ class BillingCycleForm extends Component {
                 <Field readOnly={readOnly} name="year" component={LabelAndInput}
                 label="Ano" type="number"                
                 cols="12 4" placeholder="Informe o Mês" />
-                <Summary credit={1000} debt={100}/>
+                <Summary credit={sumOfCredts} debt={sumOfDebts}/>
                 <ItemList list={credits} cols="12 6" readOnly={readOnly}
                 field="credits" legend="Créditos"/>
-                <ItemList list={credits} cols="12 6" readOnly={readOnly}
+                <ItemList list={debts} cols="12 6" readOnly={readOnly}
                 field="debts" legend="Débitos" showStatus/>
                 </div>
                 <div className="box-footer">
