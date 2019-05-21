@@ -4,9 +4,9 @@ import { reduxForm, Field } from 'redux-form'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { login, signup } from './authActions'
-import Row from '../common/layout/row'
-import Grid from '../common/layout/grid'
-import Messages from '../common/msg/messages'
+import Row from '../common/layout/Row'
+import Grid from '../common/layout/Grid'
+import Messages from '../common/msg/Messages'
 import Input from '../common/form/inputAuth'
 class Auth extends Component {
     constructor(props) {
@@ -35,7 +35,7 @@ class Auth extends Component {
                             placeholder="E-mail" icon='envelope' />
                         <Field component={Input} type="password" name="password"
                             placeholder="Senha" icon='lock' />
-                        <Field component={Input} type="password" name="confirm_password"
+                        <Field component={Input} type="password" name="confirmPassword"
                             placeholder="Confirmar Senha" icon='lock' hide={loginMode} />
                         <Row>
                             <Grid cols="4">
