@@ -17,6 +17,7 @@
 | Forma de como trabalhar com componentes filhos| É só ver o exemplo no Componente [Família.jsx](https://github.com/kelvi-ribeiro/curso-react-redux/blob/master/exercicios-react/src/components/Familia.jsx)
 | Sobre Arrow Function e `this`| O recurso de Arrow Function garante que o `this` será associado ao local que a função foi escrita, diferente de uma função comum que o `this` pegaria o contexto da onde a função foi chamada|
 | Operador de desestruturação (destructuring assignmen)| Esse recurso nos permite fazer várias coisas de forma enchuta, um exemplo disso seria com a atribuição mais inteligente de variáveis de um array, desse jeito : `[a,b,c] = [1,2,3]` o código a seguir, faz com que as variáveis receam os valores sequenciamente, sendo `a` variável ver sendo 1, a variábel `b` sendo 3 e a variável `c` sendo 3|
+| Possibilidade de setar a variável env de uma única forma para plataformas distintas(Mac,Linux, Windows)| é necessário instalar a dependência "cross-env" que nos permite essa possibildiade.|
 
 ## Redux
 

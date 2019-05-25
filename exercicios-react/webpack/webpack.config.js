@@ -1,29 +1,39 @@
+const modoDev = process.env.NODE_ENV !== 'production'
 const webpack = require('webpack')
-const miniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 module.exports = {
-    mode:'development',
-    entry:'./src/principal',
-    output:{
-        filename:'principal.js',
-        path:__dirname + '/public'
+    mode: modoDev ? 'development' : 'production',
+    entry: './src/principal.js',
+    output: {
+        filename: 'principal.js',
+        path: __dirname + '/public'
+    },    
+    optimization: {
+        minimizer: [
+            new UglifyJsPlugin({
+                cache: true,
+                parallel: true
+            }),
+            //new OptimizeCSSAssetsPlugin({}) Está dando erro
+        ]
     },
-    plugins:[
-        new miniCssExtractPlugin({
-          filename:'estilo.css'  
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: "estilo.css"
         })
     ],
-    module:{
-        rules:[
-            {
-                test:/\.s?[ac]ss$/,
-                use:[
-                    miniCssExtractPlugin.loader, // Estratégia diferente do abaixo, por isso está comentado
-                    //'style-loader', // Adiciona css a DOM injetando a tag <style>
-                    'css-loader', // Interpreta @impot, url()....
-                    'sass-loader'
+    module: {
+        rules: [{
+            test: /\.s?[ac]ss$/,
+            use: [
+                MiniCssExtractPlugin.loader,
+                // 'style-loader', // Adiciona CSS a DOM injetando a tag <style>
+                'css-loader', // interpreta @import, url()...
+                'sass-loader',
                 ]
-
             }
         ]
     }
