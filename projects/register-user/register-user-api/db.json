@@ -1,18 +1,19 @@
 {
-    "users":[
-        {
-            "id":1,
-            "name":"Kauan Ribeiro",
-            "email":"kauan.ribeiro@gmail.com"
-
-        },
-        {
-            "id":2,
-            "name":"Kelvi Ribeiro",
-            "email":"kelvi.ribeiro@gmail.com"
-
-        }
-    ]
-   
+  "users": [
+    {
+      "id": 1,
+      "name": "Kauan Ribeiro",
+      "email": "kauan.ribeiro@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Kelvi Ribeiro",
+      "email": "kelvi.ribeiro@gmail.com"
+    },
+    {
+      "name": "Jobson Souza",
+      "email": "jobson.souza@gmail.com",
+      "id": 3
+    }
+  ]
 }
-    
