@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Main from '../template/Main'
 import axios from 'axios'
 import FontAwesomeIcon from '../template/FontAwesomeIcon';
+import Show from '../template/Show';
 
 const headerProps = {
     icon: 'users',
@@ -73,16 +74,18 @@ export default class UserCrud extends Component {
                 </div>
                 <hr />
                 <div className="row">
+                    <Show show={this.state.user && this.state.user.name && this.state.user.email}>
                     <div className="col-12 d-flex justify-content-end">
                         <button className="btn btn-primary"
                                 onClick={e => this.save(e)}>
                             Salvar
                         </button>
                         <button className="btn btn-secondary ml-2"
-                                onClick={e => this.clear()}>
+                                onClick={() => this.clear()}>
                             Cancelar
                         </button>
                     </div>
+                    </Show>
                 </div>
             </div>
         )
