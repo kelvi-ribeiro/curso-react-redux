@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Main from '../template/Main'
 import axios from 'axios'
+import FontAwesomeIcon from '../template/FontAwesomeIcon';
 
 const headerProps = {
     icon: 'users',
@@ -131,11 +132,11 @@ export default class UserCrud extends Component {
                 <td>
                     <button className="btn btn-warning"
                             onClick={()=> this.load(user)}>
-                        <i className="fa fa-pencil"></i>
+                        <FontAwesomeIcon icon="pencil"/>
                     </button>
                     <button className="btn btn-danger ml-2"
                             onClick={()=> this.remove(user)}>
-                        <i className="fa fa-trash"></i>
+                        <FontAwesomeIcon icon="trash"/>                        
                     </button>
                 </td>
             </tr>
