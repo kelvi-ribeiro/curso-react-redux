@@ -1,16 +1,11 @@
 import './Nav.css'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import NavItem from './NavItem';
 
 export default props =>
     <aside className="menu-area">
-        <nav className="menu">
-        {/*Transformar em componente depois dessa aula*/}
-        <Link to="/">
-        <i className="fa fa-home"></i> Início
-        </Link>
-        <Link to="/users">
-        <i className="fa fa-users"></i> Usuários
-        </Link>
+        <nav className="menu">        
+        <NavItem url="/" nome="Início" icon="home"/>
+        <NavItem url="/users" nome="Usuários" icon="users"/>        
         </nav>
     </aside>
