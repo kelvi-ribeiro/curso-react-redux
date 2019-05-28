@@ -1,3 +1,8 @@
+# React + Redux: Fundamentos e Duas Apps do ABSOLUTO ZERO!
+
+Este repositório possui os exercícios e projetos feitos no curso ministrado pelo Instrutor  [Leonardo Leitão](https://www.udemy.com/user/leonardomouraleitao/) - [Link do Curso](https://www.udemy.com/react-redux-pt/).
+
+
 ## Comandos importantes do curso
 
 | Comando | O que faz ?
